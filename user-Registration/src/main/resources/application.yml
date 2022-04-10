@@ -1,0 +1,32 @@
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '"*"'
+my:
+    app: 'this is user registration microservice '
+    
+server:
+    port: 8082
+    
+spring:
+    application:
+        name: user-Registration
+    cloud:
+        config:
+            uri: http://localhost:8888
+    datasource:
+        password: ''
+        url: jdbc:mysql://localhost:3306/mydata?useSSL=false
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+        show-sql: true
+    mvc:
+        view:
+            prefix: /WEB-INF/view/
+            suffix: .jsp

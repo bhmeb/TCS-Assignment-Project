@@ -1,0 +1,13 @@
+package web.microservice.userRegistration;
+
+import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class UserRegistrationApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
